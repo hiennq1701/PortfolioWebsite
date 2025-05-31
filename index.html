@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Ngô Quang Hiển</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="menu-toggle" id="menuToggle">☰</span>
+        <ul id="menu">
+          <li><a href="#home" data-lang="home">Trang chủ</a></li>
+          <li><a href="#projects" data-lang="projects">Dự án</a></li>
+          <li><a href="#skills" data-lang="skills">Kĩ năng</a></li>
+          <li><a href="#contact" data-lang="contact">Liên hệ</a></li>
+        </ul>
+        <div class="nav-controls">
+          <div class="theme-switch-wrapper">
+            <i class="fas fa-sun"></i>
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+            <i class="fas fa-moon"></i>
+          </div>
+          <div class="language-switch">
+            <button id="langToggle" class="lang-btn">
+              <span class="lang-text">EN</span>
+              <i class="fas fa-globe"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="section">
+        <div class="home-background">
+          <div class="container">
+            <h1 class="title" data-lang="title">Xin chào👋, mình là Ngô Quang Hiển!</h1>
+            <p class="subtitle" data-lang="intro">
+              Chào mừng bạn đến với portfolio của mình!<br>
+              Mình là sinh viên năm 2 tại Hà Nội, học tại trường cao đẳng FPT Polyschool, 
+              chuyên ngành phát triển phần mềm.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title" data-lang="projects">Dự Án</h2>
+          <div class="search-container">
+            <input
+              type="text"
+              id="projectSearch"
+              placeholder="Tìm kiếm dự án..."
+              data-lang="search" style="height: 40px;"
+            />
+          </div>
+          <div id="project-list" class="project-grid"></div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title" data-lang="skills">Kĩ năng</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-window-maximize"></i>
+              <span>Swing</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS (Tailwind)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title" data-lang="contact">Liên hệ</h2>
+          <div class="form-container">
+            <form
+              id="contact-form"
+              target="hidden_iframe"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSd2gRxmHRQpDMQCsLulH0bNMQ8Cnd0ZJGBx3V3hvFRlIF6fqQ/formResponse"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name" data-lang="name">Tên:</label>
+                <input type="text" id="name" name="entry.1199361862" required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-lang="email">Email:</label>
+                <input type="email" id="email" name="entry.318439183" required />
+              </div>
+              <div class="form-group">
+                <label for="message" data-lang="message">Lời nhắn:</label>
+                <textarea id="message" name="entry.242352107" required></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="button" class="clear-btn">Xoá</button>
+                <button type="submit" class="submit-btn" data-lang="send">
+                  Gửi
+                </button>
+              </div>
+            </form>
+            <iframe name="hidden_iframe" style="display: none"></iframe>
+            <div class="form-success" id="formSuccess" style="display: none">
+              <i class="fas fa-check-circle"></i>
+              <h3>Cảm ơn bạn đã gửi thông tin liên hệ!</h3>
+              <p>Tôi sẽ trả lời sớm nhất có thể!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Ngô Quang Hiển</p>
+        <div class="social-links">
+          <a href="https://github.com/hiennq1701" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/quang-hien-ngo-741163369" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/hiennq1701" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="mailto:hiennq.work@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.tiktok.com/@hien170108" target="_blank">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://zalo.me/0867004125" target="_blank">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
