@@ -280,18 +280,6 @@ header .menu-toggle {
   animation: fadeInUp 1s ease-out;
 }
 
-.home-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-content img {
-  width: 25%;
-  height: 25%;
-  border-radius: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
 
 /* Projects Section */
 .search-container {
