@@ -101,9 +101,9 @@ const translations = {
     projects: "Dự án",
     skills: "Kĩ năng",
     contact: "Liên hệ",
-    title: "Xin chào👋, mình là Ngô Quang Hiển!",
+    title: "Xin chào👋, mình là<br />Ngô Quang Hiển!",
     intro:
-      "Chào mừng bạn đến với portfolio của mình!<br>Mình đang là sinh viên năm 2 tại Hà Nội, học tại trường cao đẳng FPT Polyschool, chuyên ngành phát triển phần mềm.",
+      "Chào mừng bạn đến với portfolio của mình!<br>Mình đang là sinh viên năm 2 tại Hà Nội,<br />học tại trường cao đẳng FPT Polyschool,<br>chuyên ngành phát triển phần mềm.",
     search: "Tìm kiếm dự án...",
     name: "Tên:",
     email: "Email:",
@@ -116,9 +116,9 @@ const translations = {
     projects: "Projects",
     skills: "Skills",
     contact: "Contact",
-    title: "Hello👋, I'm Ngô Quang Hiển!",
+    title: "Hello👋, I'm<br />Ngô Quang Hiển!",
     intro:
-      "Welcome to my portfolio!<br>I am a 2nd-year student in Hanoi, studying at FPT Polyschool, majoring in Software Development.",
+      "Welcome to my portfolio!<br>I am a 2nd-year student in Hanoi,<br />studying at FPT Polyschool,<br>majoring in Software Development.",
     search: "Search projects...",
     name: "Name:",
     email: "Email:",
