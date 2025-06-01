@@ -235,11 +235,6 @@ header .menu-toggle {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-header .menu-toggle:hover {
-  transform: rotate(90deg);
 }
 
 /* Sections */
@@ -266,10 +261,6 @@ header .menu-toggle:hover {
   padding: 4rem 0;
   text-align: center;
   transition: background 0.3s;
-}
-
-[data-theme="dark"] .home-background {
-  background: linear-gradient(135deg, #232526, #414345);
 }
 
 .title {
