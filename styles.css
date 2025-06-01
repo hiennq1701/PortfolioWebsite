@@ -267,14 +267,12 @@ header .menu-toggle {
 .title {
   font-size: 3rem;
   margin-bottom: 1rem;
-  text-align: start;
   color: var(--home-text-color);
   animation: fadeInUp 0.8s ease-out;
 }
 
 .subtitle {
   font-size: 1.25rem;
-  text-align: start;
   max-width: 800px;
   color: var(--home-text-color);
   animation: fadeInUp 1s ease-out;
