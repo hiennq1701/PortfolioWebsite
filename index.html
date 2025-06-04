@@ -20,23 +20,41 @@
     <header>
       <nav>
         <span class="menu-toggle" id="menuToggle">☰</span>
-        <ul id="menu">
-          <li><a href="#home" data-lang="home">Trang chủ</a></li>
-          <li><a href="#projects" data-lang="projects">Dự án</a></li>
-          <li><a href="#skills" data-lang="skills">Kĩ năng</a></li>
-          <li><a href="#contact" data-lang="contact">Liên hệ</a></li>
-        </ul>
-        <div class="nav-controls">
+        <div class="nav-menu" id="menu">
+          <ul>
+            <li><a href="#home" data-lang="home">Trang chủ</a></li>
+            <li><a href="#projects" data-lang="projects">Dự án</a></li>
+            <li><a href="#skills" data-lang="skills">Kĩ năng</a></li>
+            <li><a href="#contact" data-lang="contact">Liên hệ</a></li>
+          </ul>
+          <div class="mobile-controls">
+            <div class="theme-switch-wrapper">
+              <i class="fas fa-sun"></i>
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+              <i class="fas fa-moon"></i>
+            </div>
+            <div class="language-switch">
+              <button id="langToggle" class="lang-btn">
+                <span class="lang-text">EN</span>
+                <i class="fas fa-globe"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="nav-controls desktop-only">
           <div class="theme-switch-wrapper">
             <i class="fas fa-sun"></i>
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
+            <label class="theme-switch" for="checkbox-desktop">
+              <input type="checkbox" id="checkbox-desktop" />
               <div class="slider round"></div>
             </label>
             <i class="fas fa-moon"></i>
           </div>
           <div class="language-switch">
-            <button id="langToggle" class="lang-btn">
+            <button id="langToggleDesktop" class="lang-btn">
               <span class="lang-text">EN</span>
               <i class="fas fa-globe"></i>
             </button>
